@@ -3,27 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package activity;
 
 /**
  *
  * @author macstudent
  */
 public class Activity {
-    public static void main(String[]arg)
-    {
-        for(int i=1;i<=5;i++){
-            for(int j= 1; j<=5;j++){
-                if(i==1 || i==5|| j==1|| j==5)
-                {
-                    System.out.print("*");
-                }
-                else{
-                    System.out.print(" ");
-                }            
-                    
-            }
-            System.out.println();
-        }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        BANKACCOUNT bac1 = new BANKACCOUNT("Canadian bank",11,4444,"amandeep",10000.00f);
+        System.out.println(bac1.toString());
     }
     
 }
